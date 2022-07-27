@@ -13,244 +13,230 @@
     <link rel="icon" href="assets/favicon.ico">
 </head>
 
-<body class="body" onload="activateHamburger()">
-    <main class="main">
-        <div class="main_container">
-            <section class="hero">
-                <div class="header">
-                    <div class="logo">
-                        <!-- <img class="logo_img" src="img/logo.svg" alt="logo"> -->
+<body class="body">
+    <div class="wrapper">
+        <main class="main">
+            <div class="main_container">
+                <section class="hero">
+                    <div class="header">
+                        <div class="logo">
+                        </div>
+                        <div class="nav">
+                            <nav class="nav_header" id="nav_header">
+                                <ul class="nav_list">
+                                    <li class="nav_item"><a data-goto=".skills" href="#" class="navigation_link">Skills</a></li>
+                                    <li class="nav_item"><a data-goto=".portfolio" href="#" class="navigation_link">Portfolio</a></li>
+                                    <li class="nav_item"><a data-goto=".video" href="#" class="navigation_link">Video</a></li>
+                                    <li class="nav_item"><a data-goto=".price" href="#" class="navigation_link">Price</a></li>
+                                    <li class="nav_item"><a data-goto=".contacts" href="#" class="navigation_link">Contacts</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="switch_lang">
+                            <span class="switch_en">en</span>
+                            <span class="switch">/</span>
+                            <span class="switch_ru">ru</span>
+                        </div>
+                        <div class="burger">
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="nav">
-                        <nav class="nav_header" id="nav_header">
-                            <ul class="nav_list">
-                                <li class="nav_item">
-                                    <a href="#Skills" class="navigation_link">Skills</a>
-                                </li>
-                                <li class="nav_item">
-                                    <a href="#Portfolio" class="navigation_link">Portfolio</a>
-                                </li>
-                                <li class="nav_item">
-                                    <a href="#Video" class="navigation_link">Video</a>
-                                </li>
-                                <li class="nav_item">
-                                    <a href="#Price" class="navigation_link">Price</a>
-                                </li>
-                                <li class="nav_item">
-                                    <a href="#Contacts" class="navigation_link">Contacts</a>
-                                </li>
-                            </ul>
-                            <div class="nav_header_close" id="nav_header_close">
-                                <span class="nav_header_close_line"></span>
-                                <span class="nav_header_close_line"></span>
+                    <div class="hero_container">
+                        <h1 class="hero_title">Alexa Rise</h1>
+                        <p class="hero_text">Save sincere emotions, romantic feellings and happy moments of life together with professional photographer Alexa Rise</p>
+                        <form class="hero_form">
+                            <button class="hero_button" id="box">Hire me</button>
+                        </form>
+                    </div>
+                </section>
+                <section class="skills" id="skills">
+                    <div class="skills_section_title">
+                        <div class="skills_span_title">
+                            <h2 class="skills_text">Skills</h2>
+                        </div>
+                        <div class="skills_section_title_line">
+                        </div>
+                    </div>
+                    <div class="skills_item">
+                        <div class="camera">
+                            <div class="camera_div1">Digital photography</div>
+                            <div class="camera_div2">High-quality photos in the studio and on the nature</div>
+                        </div>
+                        <div class="shooting">
+                            <div class="shooting_div1">Video shooting</div>
+                            <div class="shooting_div2">Capture your moments so that they always stay with you</div>
+                        </div>
+                        <div class="retouch">
+                            <div class="retouch_div1">Retouch</div>
+                            <div class="retouch_div2">I strive to make photography surpass reality</div>
+                        </div>
+                        <div class="mic">
+                            <div class="mic_div1">Audio</div>
+                            <div class="mic_div2">Professional sounds recording for video, advertising, portfolio</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio" id="portfolio">
+                    <div class="portfolio_section_title">
+                        <div class="portfolio_span_title">
+                            <h2 class="portfolio_text">Portfolio</h2>
+                        </div>
+                        <div class="portfolio_title_line">
+                        </div>
+                    </div>
+                    <div class="portfolio_buttons">
+                        <form class="portfolio_button1">
+                            <button class="button_winter">Winter</button>
+                        </form>
+                        <form class="portfolio_button2">
+                            <button class="button_spring">Spring</button>
+                        </form>
+                        <form class="portfolio_button3">
+                            <button class="button_summer">Summer</button>
+                        </form>
+                        <form class="portfolio_button4">
+                            <button class="button_autumn">Autumn</button>
+                        </form>
+                    </div>
+                    <div class="portfolio_items">
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img.jpg" alt="foto">
+                        </div>
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img(1).jpg" alt="foto">
+                        </div>
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img(2).jpg" alt="foto">
+                        </div>
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img(3).jpg" alt="foto">
+                        </div>
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img(4).jpg" alt="foto">
+                        </div>
+                        <div class="portfolio_item">
+                            <img class="portfolio_img" src="img/portfolio-img(5).jpg" alt="foto">
+                        </div>
+                    </div>
+                </section>
+                <section class="video" id="video">
+                    <div class="video_section_title">
+                        <div class="video_span_title">
+                            <h2 class="video_text">Video</h2>
+                        </div>
+                        <div class="video_title_line">
+                        </div>
+                    </div>
+                    <form class="video_form">
+                        <button class="video_player"><img class="video_player_img" src="img/Play_hover.svg" alt="video"></button>
+                    </form>
+                    <div class="video_div_img">
+                        <img class="video_img" src="img/video-player.jpg" alt="video-player">
+                    </div>
+                </section>
+                <section class="price" id="price">
+                    <div class="price_section_title">
+                        <div class="price_span_title">
+                            <h2 class="price_text">Price</h2>
+                        </div>
+                        <div class="price_title_line">
+                        </div>
+                    </div>
+                    <div class="price_items">
+                        <div class="price_item1">
+                            <div class="price_item1_div1">Standart</div>
+                            <div class="price_item1_div2">500 $</div>
+                            <div class="price_item1_div3">
+                                <p>One location</p>
+                                <p>120 photos in color</p>
+                                <p>12 photos in retouch</p>
+                                <p>Readiness 2-3 weeks</p>
+                                <p>Make up, visage</p>
                             </div>
-                        </nav>
-                    </div>
-                    <div class="switch_lang">
-                        <span class="switch_en">en</span>
-                        <span class="switch">/</span>
-                        <span class="switch_ru">ru</span>
-                    </div>
-                    <div class="hamburger" id="hamburger">
-                        <span></span>
-                        <!-- <span class="line2"></span>
-                        <span class="line3"></span> -->
-                    </div>
-                </div>
-                <div class="hero_container">
-                    <h1 class="hero_title">Alexa Rise</h1>
-                    <p class="hero_text">Save sincere emotions, romantic feellings and happy moments of life together with professional photographer Alexa Rise</p>
-                    <form class="hero_form">
-                        <button class="hero_button" id="box">Hire me</button>
-                    </form>
-                </div>
-            </section>
-            <section class="skills" id="Skills">
-                <div class="skills_section_title">
-                    <div class="skills_span_title">
-                        <h2 class="skills_text">Skills</h2>
-                    </div>
-                    <div class="skills_section_title_line">
-                    </div>
-                </div>
-                <div class="skills_item">
-                    <div class="camera">
-                        <div class="camera_div1">Digital photography</div>
-                        <div class="camera_div2">High-quality photos in the studio and on the nature</div>
-                    </div>
-                    <div class="shooting">
-                        <div class="shooting_div1">Video shooting</div>
-                        <div class="shooting_div2">Capture your moments so that they always stay with you</div>
-                    </div>
-                    <div class="retouch">
-                        <div class="retouch_div1">Retouch</div>
-                        <div class="retouch_div2">I strive to make photography surpass reality</div>
-                    </div>
-                    <div class="mic">
-                        <div class="mic_div1">Audio</div>
-                        <div class="mic_div2">Professional sounds recording for video, advertising, portfolio</div>
-                    </div>
-                </div>
-            </section>
-            <section class="portfolio" id="Portfolio">
-                <div class="portfolio_section_title">
-                    <div class="portfolio_span_title">
-                        <h2 class="portfolio_text">Portfolio</h2>
-                    </div>
-                    <div class="portfolio_title_line">
-                    </div>
-                </div>
-                <div class="portfolio_buttons">
-                    <form class="portfolio_button1">
-                        <button class="button_winter">Winter</button>
-                    </form>
-                    <form class="portfolio_button2">
-                        <button class="button_spring">Spring</button>
-                    </form>
-                    <form class="portfolio_button3">
-                        <button class="button_summer">Summer</button>
-                    </form>
-                    <form class="portfolio_button4">
-                        <button class="button_autumn">Autumn</button>
-                    </form>
-                </div>
-                <div class="portfolio_items">
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img.jpg" alt="foto">
-                    </div>
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img(1).jpg" alt="foto">
-                    </div>
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img(2).jpg" alt="foto">
-                    </div>
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img(3).jpg" alt="foto">
-                    </div>
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img(4).jpg" alt="foto">
-                    </div>
-                    <div class="portfolio_item">
-                        <img class="portfolio_img" src="img/portfolio-img(5).jpg" alt="foto">
-                    </div>
-                </div>
-            </section>
-            <section class="video" id="Video">
-                <div class="video_section_title">
-                    <div class="video_span_title">
-                        <h2 class="video_text">Video</h2>
-                    </div>
-                    <div class="video_title_line">
-                    </div>
-                </div>
-                <form class="video_form">
-                    <button class="video_player"><img class="video_player_img" src="img/Play_hover.svg" alt="video"></button>
-                </form>
-                <div class="video_div_img">
-                    <img class="video_img" src="img/video-player.jpg" alt="video-player">
-                </div>
-            </section>
-            <section class="price" id="Price">
-                <div class="price_section_title">
-                    <div class="price_span_title">
-                        <h2 class="price_text">Price</h2>
-                    </div>
-                    <div class="price_title_line">
-                    </div>
-                </div>
-                <div class="price_items">
-                    <div class="price_item1">
-                        <div class="price_item1_div1">Standart</div>
-                        <div class="price_item1_div2">500 $</div>
-                        <div class="price_item1_div3">
-                            <p>One location</p>
-                            <p>120 photos in color</p>
-                            <p>12 photos in retouch</p>
-                            <p>Readiness 2-3 weeks</p>
-                            <p>Make up, visage</p>
+                            <form class="price_form1">
+                                <button class="price_button1">Order shooting</button>
+                            </form>
                         </div>
-                        <form class="price_form1">
-                            <button class="price_button1">Order shooting</button>
-                        </form>
-                    </div>
-                    <div class="price_item2">
-                        <div class="price_item2_div1">Premium</div>
-                        <div class="price_item2_div2">700 $</div>
-                        <div class="price_item2_div3">
-                            <p>One or two locations</p>
-                            <p>200 photos in color</p>
-                            <p>20 photos in retouch</p>
-                            <p>Readiness 1-2 weeks</p>
-                            <p>Make up, visage</p>
+                        <div class="price_item2">
+                            <div class="price_item2_div1">Premium</div>
+                            <div class="price_item2_div2">700 $</div>
+                            <div class="price_item2_div3">
+                                <p>One or two locations</p>
+                                <p>200 photos in color</p>
+                                <p>20 photos in retouch</p>
+                                <p>Readiness 1-2 weeks</p>
+                                <p>Make up, visage</p>
+                            </div>
+                            <form class="price_form2">
+                                <button class="price_button2">Order shooting</button>
+                            </form>
                         </div>
-                        <form class="price_form2">
-                            <button class="price_button2">Order shooting</button>
-                        </form>
-                    </div>
-                    <div class="price_item3">
-                        <div class="price_item3_div1">Gold</div>
-                        <div class="price_item3_div2">1000 $</div>
-                        <div class="price_item3_div3">
-                            <p>Three locations or more</p>
-                            <p>300 photos in color</p>
-                            <p>50 photos in retouch</p>
-                            <p>Readiness 1 week</p>
-                            <p>Make up, visage, hairstyle</p>
+                        <div class="price_item3">
+                            <div class="price_item3_div1">Gold</div>
+                            <div class="price_item3_div2">1000 $</div>
+                            <div class="price_item3_div3">
+                                <p>Three locations or more</p>
+                                <p>300 photos in color</p>
+                                <p>50 photos in retouch</p>
+                                <p>Readiness 1 week</p>
+                                <p>Make up, visage, hairstyle</p>
+                            </div>
+                            <form class="price_form3">
+                                <button class="price_button3">Order shooting</button>
+                            </form>
                         </div>
-                        <form class="price_form3">
-                            <button class="price_button3">Order shooting</button>
-                        </form>
+                    </div>
+                </section>
+                <section class="contacts" id="contacts">
+                    <div class="contacts_container">
+                        <div class="contacts_forms">
+                            <div class="contacts_div_h2">
+                                <h2 class="contacts_h2">Contact me</h2>
+                            </div>
+                            <form>
+                                <input class="input_email" type="email" placeholder="E-mail">
+                            </form>
+                            <form>
+                                <input class="input_phone" type="tel" placeholder="Phone">
+                            </form>
+                            <form>
+                                <textarea class="message" placeholder="Message"></textarea>
+                            </form>
+                            <form class="contacts_button_message">
+                                <button class="button_message">Send message</button>
+                            </form>
+                        </div>
+                        <div class="contacts_div_img">
+                            <img class="contacts_img" src="img/contacts.jpg" alt="img_contacts">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_left">
+                    <div class="footer_left_data">2022</div>
+                    <div class="footer_left_github">
+                        <a href="https://github.com/JuliliOb" target="_blank">github</a>
                     </div>
                 </div>
-            </section>
-            <section class="contacts" id="Contacts">
-                <div class="contacts_container">
-                    <div class="contacts_forms">
-                        <div class="contacts_div_h2">
-                            <h2 class="contacts_h2">Contact me</h2>
-                        </div>
-                        <form>
-                            <input class="input_email" type="email" placeholder="E-mail">
-                        </form>
-                        <form>
-                            <input class="input_phone" type="tel" placeholder="Phone">
-                        </form>
-                        <form>
-                            <textarea class="message" placeholder="Message"></textarea>
-                        </form>
-                        <form class="contacts_button_message">
-                            <button class="button_message">Send message</button>
-                        </form>
-                    </div>
-                    <div class="contacts_div_img">
-                        <img class="contacts_img" src="img/contacts.jpg" alt="img_contacts">
+                <div class="footer_center">
+                    <div>
+                        <a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_left">
-                <img class="footer_left_img" src="img/©.svg" alt="img">
-                <div class="footer_left_data">2022</div>
-                <div class="footer_left_github">
-                    <a href="https://github.com/JuliliOb">github</a>
+                <div class="footer_right">
+                    <a href="https://www.instagram.com/ulili_liliu/" class="footer_right1" target="_blank">
+                        <img class="footer_right_img" src="img/inst1.svg" alt="inst">
+                    </a>
+                    <a href="https://www.facebook.com/uliya.oborina/" class="footer_right2" target="_blank">
+                        <img class="footer_right_img" src="img/fb1.svg" alt="fb">
+                    </a>
                 </div>
             </div>
-            <div class="footer_center">
-                <div>
-                    <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
-                </div>
-            </div>
-            <div class="footer_right">
-                <img class="footer_right_img1" src="img/inst1.svg" alt="insta">
-                <img class="footer_right_img2" src="img/fb1.svg" alt="fb">
-                <img class="footer_right_img3" src="img/tw1.svg" alt="tw">
-                <img class="footer_right_img4" src="img/pinterest1.svg" alt="pinterest">
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 
