@@ -45,7 +45,7 @@
                         <h1 class="hero_title">Alexa Rise</h1>
                         <p class="hero_text">Save sincere emotions, romantic feellings and happy moments of life together with professional photographer Alexa Rise</p>
                         <form class="hero_form">
-                            <button class="hero_button" id="box">Hire me</button>
+                            <button data-modal class="hero_button" id="box" type="button">Hire me</button>
                         </form>
                     </div>
                 </section>
@@ -154,7 +154,7 @@
                                 <p>Make up, visage</p>
                             </div>
                             <form class="price_form1">
-                                <button class="price_button1">Order shooting</button>
+                                <button data-modal class="price_button1" type="button">Order shooting</button>
                             </form>
                         </div>
                         <div class="price_item2">
@@ -168,7 +168,7 @@
                                 <p>Make up, visage</p>
                             </div>
                             <form class="price_form2">
-                                <button class="price_button2">Order shooting</button>
+                                <button data-modal class="price_button2" type="button">Order shooting</button>
                             </form>
                         </div>
                         <div class="price_item3">
@@ -182,7 +182,7 @@
                                 <p>Make up, visage, hairstyle</p>
                             </div>
                             <form class="price_form3">
-                                <button class="price_button3">Order shooting</button>
+                                <button data-modal class="price_button3" type="button">Order shooting</button>
                             </form>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                                 <textarea class="message" placeholder="Message"></textarea>
                             </form>
                             <form class="contacts_button_message">
-                                <button class="button_message">Send message</button>
+                                <button data-modal class="button_message" type="button">Send message</button>
                             </form>
                         </div>
                         <div class="contacts_div_img">
@@ -236,6 +236,21 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">&times;</div>
+                        <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <button class="btn">Перезвонить мне</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
